@@ -2,32 +2,50 @@
 html {
     box-sizing: border-box;
 }
+
 *,*:before, *:after{
     box-sizing: inherit;
 }
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     margin: 0;
-    background-color: #5f9ea0;
+    background-color: #195355;
 }
+
+div{
+    margin-top: 50px;
+}
+
 a{
     padding: 8px;
-    color: #1d2a59;
+    color: #B3DBCB;
 }
+
 a:hover{
     text-decoration: none;
 }
+
 h1 {
-    color: palegoldenrod;
-    font-size: 40px;
+    color: #ffd700;
+    font-size: 45px;
     margin-top: 0;
 }
+
 h2 {
-    color: gold;
+    color: #eee8aa;
+    font-size: 30px;
 }
+
+h3{
+    color: #C7C0C7;
+    font-size: 25px;
+}
+
 p {
-    color: #2b2629;
+    color: #FBC17E;
 }
+
 .content-wrap {
     max-width: 950px;
     margin: 10px;
@@ -35,45 +53,53 @@ p {
     overflow: hidden;
 }
 
-/*These are for the header and footer only*/
-header
-{
-    /*text-align: center;*/
-    margin: 15px;
-    overflow: hidden;
+/*Id selector for nav bar*/
+#nav-bar{
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1d2a59;
+    }
+
+    li {
+        float: left;
+        border-right:1px solid #bbb;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #172116;
+    }
 }
 
-/*UNUSED*/
-/*________________________________________________*/
-/*Global Styles*/
-/*.col-narrow {*/
-/*    width: 35%;*/
-/*    float: left;*/
-/*    padding-right: 3%;*/
-/*    min-height: 175px;*/
-/*}*/
-/*.col-wide {*/
-/*    width: 62%;*/
-/*    float: left;*/
-/*    min-height: 175px;*/
-/*}*/
-/*________________________________________________*/
+/*These are for the header only*/
+header
+{
+    background-color: #D1C7D7;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
 
-/*________________________________________________*/
-/*Colors*/
-/*body {*/
-/*    background-color: cadetblue;*/
-/*}*/
-/*h1 {*/
-/*    color: antiquewhite;*/
-/*}*/
-/*h2 {*/
-/*    color: gold;*/
-/*}*/
-/*p {*/
-/*    color: black;*/
-/*}*/
-/*p{*/
-/*    #201d2a*/
-/*}*/
-/*________________________________________________*/
+}
+
+.h2{
+    color: #2C5832;
+}
+
