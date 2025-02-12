@@ -1,15 +1,33 @@
 body {
-    background-color: cadetblue;
+    background-color: #5f9ea0;
+}
+a{padding: 6px;
+
 }
 a{padding: 6px;
 
 }
 h1 {
-    color: antiquewhite;
+    color: palegoldenrod;
 }
 h2 {
     color: gold;
 }
 p {
-    color: black;
+    color: #201d2a;
 }
+
+
+/*commenting out old colors for now*/
+/*body {*/
+/*    background-color: cadetblue;*/
+/*}*/
+/*h1 {*/
+/*    color: antiquewhite;*/
+/*}*/
+/*h2 {*/
+/*    color: gold;*/
+/*}*/
+/*p {*/
+/*    color: black;*/
+/*}*/
