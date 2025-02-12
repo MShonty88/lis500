@@ -1,0 +1,79 @@
+/*Globally applied styles*/
+html {
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #5f9ea0;
+}
+a{
+    padding: 8px;
+    color: #1d2a59;
+}
+a:hover{
+    text-decoration: none;
+}
+h1 {
+    color: palegoldenrod;
+    font-size: 40px;
+    margin-top: 0;
+}
+h2 {
+    color: gold;
+}
+p {
+    color: #2b2629;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 10px;
+    padding: 50px;
+    overflow: hidden;
+}
+
+/*These are for the header and footer only*/
+header
+{
+    /*text-align: center;*/
+    margin: 15px;
+    overflow: hidden;
+}
+
+/*UNUSED*/
+/*________________________________________________*/
+/*Global Styles*/
+/*.col-narrow {*/
+/*    width: 35%;*/
+/*    float: left;*/
+/*    padding-right: 3%;*/
+/*    min-height: 175px;*/
+/*}*/
+/*.col-wide {*/
+/*    width: 62%;*/
+/*    float: left;*/
+/*    min-height: 175px;*/
+/*}*/
+/*________________________________________________*/
+
+/*________________________________________________*/
+/*Colors*/
+/*body {*/
+/*    background-color: cadetblue;*/
+/*}*/
+/*h1 {*/
+/*    color: antiquewhite;*/
+/*}*/
+/*h2 {*/
+/*    color: gold;*/
+/*}*/
+/*p {*/
+/*    color: black;*/
+/*}*/
+/*p{*/
+/*    #201d2a*/
+/*}*/
+/*________________________________________________*/
