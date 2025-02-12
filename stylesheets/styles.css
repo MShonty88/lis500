@@ -31,21 +31,23 @@ h1 {
 h2 {
     color: #eee8aa;
     font-size: 30px;
+    margin-top: 50px;
+    text-decoration-line: underline;
+    text-decoration-color: lightseagreen;
 }
 
 h3{
     color: #C7C0C7;
     font-size: 25px;
+    margin-top: 50px;
 }
 
 p {
     color: #FBC17E;
 }
-.spacer{
-        margin-top: 50px;
-}
+
 .content-wrap {
-    max-width: 950px;
+    max-width: 100%;
     margin: 5px;
     padding: 40px;
     overflow: hidden;
