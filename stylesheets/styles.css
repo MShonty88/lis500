@@ -3,8 +3,18 @@ html {
     box-sizing: border-box;
 }
 
-*,*:before, *:after{
-    box-sizing: inherit;
+#iframe-youtube {
+    width:720px;
+    height:500px;
+    border:0;
+    margin-bottom:50px;
+}
+
+#iframe-nyt {
+    width:720px;
+    height:500px;
+    border:0;
+    margin:0;
 }
 
 body {
@@ -13,12 +23,12 @@ body {
     background-color: #195355;
 }
 
-a{
+a {
     padding: 8px;
     color: #B3DBCB;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -36,7 +46,7 @@ h2 {
     text-decoration-color: lightseagreen;
 }
 
-h3{
+h3 {
     color: #C7C0C7;
     font-size: 25px;
     margin-top: 50px;
@@ -50,16 +60,16 @@ p {
     max-width: 100%;
     margin: 5px;
     padding: 40px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /*Id selector for nav bar*/
-#nav-bar{
+#nav-bar {
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        overflow:auto;
         background-color: #1d2a59;
     }
 
@@ -90,8 +100,7 @@ p {
 }
 
 /*These are for the header only*/
-header
-{
+header {
     background-color: #D1C7D7;
     margin: 0 auto;
     padding: 20px;
@@ -99,7 +108,7 @@ header
 
 }
 
-.h2-header-area{
+.h2-header-area {
     color: #2C5832;
 }
 
