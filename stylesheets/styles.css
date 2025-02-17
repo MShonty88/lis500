@@ -20,12 +20,12 @@ html {
 body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
-    background-color: #195355;
+    background-color: #F9F8FF;
 }
 
 a {
     padding: 8px;
-    color: #B3DBCB;
+    color: #1B5299;
 }
 
 a:hover {
@@ -33,17 +33,17 @@ a:hover {
 }
 
 h1 {
-    color: #ffd700;
+    color: #523261;
     font-size: 45px;
     margin-top: 0;
 }
 
 h2 {
-    color: #eee8aa;
+    color: #205571;
     font-size: 30px;
     margin-top: 50px;
     text-decoration-line: underline;
-    text-decoration-color: lightseagreen;
+    text-decoration-color: #205571;
 }
 
 h3 {
@@ -53,7 +53,7 @@ h3 {
 }
 
 p {
-    color: #FBC17E;
+    color: #32021F;
 }
 
 .content-wrap {
@@ -95,7 +95,7 @@ p {
     }
 
     .active {
-        background-color: #172116;
+        background-color: #32021F;
     }
 }
 
@@ -108,8 +108,9 @@ header {
 
 }
 
-.h2-header-area {
-    color: #2C5832;
+
+.h2-header-area{
+    color: #1d2a59;
 }
 
 /*.animation {*/
