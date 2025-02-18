@@ -9,21 +9,24 @@
 
 <body>
 
-<!--Nav bar in header-->
   <header>
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="hero.html">Tech Hero</a></li>
-        <li><a class="active" href="resources.html">Resources</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+    <!-- nav element styled to center container-->
+    <nav>
+      <!--Centers the content in the nav bar and styles it-->
+      <div id="nav-contents">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hero.html">Tech Hero</a></li>
+          <li><a class="active" href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main>
-<!--Divs nested so class is inherited-->
     <div class="content-wrap">
+      <!--Class allows content in container to take up 100% of available space while still wrapping but should switch to flexbox-->
       <h1>Implicit Bias</h1>
       <p>
         Implicit bias refers to the attitudes or stereotypes that affect our understanding, actions, and decisions in
@@ -36,21 +39,29 @@
         that check for various implicit biases. To take the test, head
         here:<a href="https://implicit.harvard.edu/implicit/takeatest.html" target="_blank">https://implicit.harvard.edu/implicit/takeatest.html</a>
       </p>
+    </div>
+
+<!--Class allows for the iframes to reflow-->
+    <div class="flex-container">
       <h2>Video Resources</h2>
-<!--      iframe specific for youtube player-->
+
+<!--Class allows video players to grow and shrink with available space-->
       <iframe
-              id=iframe-youtube title="YouTube video player"
+              class="iframe-video"
+              title="YouTube video player"
               allowfullscreen="allowfullscreen"
               src="https://www.youtube.com/embed/uYyvbgINZkQ?si=soRTz6wcSjj5vN9">
       </iframe>
-<!--iframe specific for NYT player-->
+
       <iframe
-              id="iframe-nyt"
+              class="iframe-video"
               title="New York Times Video - Embed Player"
               allowfullscreen="allowfullscreen"
               src="https://www.nytimes.com/video/players/offsite/index.html?videoId=100000004818663">
       </iframe>
+    </div>
 
+    <div class="content-wrap">
       <h2>Learn More!</h2>
       <p> Here are resources for users to explore their biases</p>
       <ul>
