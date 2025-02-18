@@ -10,17 +10,22 @@
 <body>
 
   <header>
-    <div id="nav-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="hero.html">Tech Hero</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
+    <!-- nav element styled to center container-->
+    <nav>
+      <!--Centers the content in the nav bar and styles it-->
+      <div id="nav-contents">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="hero.html">Tech Hero</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
+    <!--Class allows content in container to take up 100% of available space while still wrapping but should switch to flexbox-->
     <div class="content-wrap">
       <h1>Tech Hero</h1>
       <h2>Leopold Green</h2>
@@ -36,7 +41,7 @@
       </p>
       <p>
         We chose Dr. Green as our tech hero because his work intersects with our own lives in different ways. Mike
-        currently works in the healthcare field, and was interested in a tech hero that intersects with that.
+        has worked in a healthcare adjacent field for over 10 years, and was diagnosed with glaucoma at the age of 16.
         Dr. Green's work appealed to Sam because she has dealt with chronic illness in her life, and has been
         fascinated with new ways to treat various illnesses.
       </p>

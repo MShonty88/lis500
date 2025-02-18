@@ -10,18 +10,23 @@
 <body>
 
   <header>
-    <div id="nav-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="hero.html">Tech Hero</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a class="active" href="about.html">About</a></li>
-      </ul>
-    </div>
+    <!-- nav element styled to center container-->
+    <nav>
+      <!--Centers the content in the nav bar and styles it-->
+      <div id="nav-contents">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hero.html">Tech Hero</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
-      <div class="content-wrap">
+    <!--Class allows content in container to take up 100% of available space while still wrapping but should switch to flexbox-->
+    <div class="content-wrap">
         <h1>About the Authors</h1>
           <h2>Sam Richter</h2>
           <img src="pictures/sam%20pfp.jpg" alt="Picture of woman with dark hair and pale skin sitting on a statute of a bear">
@@ -35,19 +40,29 @@
             When not working or studying, Sam spends time reading, cooking, and rock climbing. She also spends as much
             time as possible with her cat, dog, and boyfriend.
           </p>
+      </div>
 
 
-        <div class="spacer">
-          <h2>Mike Shonty</h2>
-          <img src="pictures/shonty1.png" alt="A bald man with a beard wearing a suit and smiling.">
-          <p>
-            Mike is an old bald man. He loves his wife, his cats, and cooking.
-          </p>
-          <p>
-            Currently, Mike is a UX designer for an electronic health records vendor. His areas of focus
-            include CMS quality reporting, accessibility, and user research.
-          </p>
-        </div>
+      <div class="content-wrap">
+        <h2>Mike Shonty</h2>
+        <img src="pictures/shonty1.png" alt="A bald man with a beard wearing a suit and smiling.">
+        <p>
+          Mike Shonty works as a lead UX designer at an electronic health records company and is currently pursuing
+          his Masters in Information at the University of Wisconsin - Madison iSchool. Born in Connecticut
+          and raised in Florida, he currently resides in Minnesota with his wife where he is at the beck and call
+          of his three cats.
+        </p>
+        <p>
+          Mike’s design work is primarily on applications used in reporting for the Centers for Medicare and Medicaid
+          Services Quality Payment Program. This has helped him start to become aware of the disparities in
+          healthcare. His reason for LIS500: Code and Power is driven by his desire to better serve the communities
+          his design work impacts, by broadening his perspectives on both technology and society.
+        </p>
+        <P>
+          Outside of work his interests include fishing, video games, bad movies, and tabletop gaming. He’s greatly
+          looking forward to the release of Monster Hunter Wilds, a game in a series he’s been playing with his wife
+          since 2010.
+        </P>
       </div>
   </main>
 

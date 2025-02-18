@@ -1,113 +1,107 @@
-/*Globally applied styles*/
-html {
+/*General styling*/
+html{
     box-sizing: border-box;
 }
 
-#iframe-youtube {
-    width:720px;
-    height:500px;
-    border:0;
-    margin-bottom:50px;
-}
-
-#iframe-nyt {
-    width:720px;
-    height:500px;
-    border:0;
-    margin:0;
-}
-
-body {
-    font-family: 'Verdana', sans-serif;
-    margin: 0;
-    background-color: #F9F8FF;
-}
-
-a {
-    padding: 8px;
-    color: #1B5299;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-h1 {
-    color: #523261;
-    font-size: 45px;
-    margin-top: 0;
-}
-
-h2 {
-    color: #205571;
-    font-size: 30px;
-    margin-top: 50px;
-    text-decoration-line: underline;
-    text-decoration-color: #205571;
-}
-
-h3 {
-    color: #C7C0C7;
-    font-size: 25px;
-    margin-top: 50px;
-}
-
-p {
-    color: #32021F;
-}
-
-.content-wrap {
+.content-wrap{
     max-width: 100%;
     margin: 5px;
     padding: 40px;
     overflow: auto;
 }
 
-/*Id selector for nav bar*/
-#nav-bar {
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow:auto;
-        background-color: #1d2a59;
-    }
-
-    li {
-        float: left;
-        border-right:1px solid #bbb;
-    }
-
-    li:last-child {
-        border-right: none;
-    }
-
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-        background-color: #111;
-    }
-
-    .active {
-        background-color: #32021F;
-    }
-}
-
-/*These are for the header only*/
-header {
-    background-color: #D1C7D7;
-    margin: 0 auto;
-    padding: 20px;
+.iframe-video{
+    display: flex;
+    border:0;
+    aspect-ratio: 16/9;
+    width: 75%;
+    margin-bottom:25px;
     overflow: hidden;
-
 }
 
-.h2-header-area{
-    color: #1d2a59;
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 50px;
+}
+
+body{
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    background-color: #F9F8FF;
+}
+
+a{
+    padding: 8px;
+    color: #1B5299;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1{
+    color: #523261;
+    font-size: 45px;
+    margin-top: 0;
+}
+
+h2{
+    color: #205571;
+    font-size: 30px;
+    margin-top: 25px;
+    text-decoration-line: underline;
+    text-decoration-color: #205571;
+}
+
+h3{
+    color: #C7C0C7;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+p{
+    color: #32021F;
+}
+
+/*Start navbar styling*/
+nav{
+    background-color: #1d2a59;
+    text-align: center;
+    margin: auto;
+}
+
+#nav-contents{
+    display: inline-block;
+}
+
+#nav-contents ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+#nav-contents li{
+    float: left;
+    border-right:1px solid #bbb;
+    border-left:1px solid #bbb;
+}
+
+#nav-contents li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav-contents li a:hover:not(.active){
+    background-color: #111;
+}
+
+#nav-contents .active{
+    background-color: #32021F;
 }
