@@ -27,6 +27,7 @@ main{
 }
 
 /*Allows images to resize*/
+
 img{
     padding-top: .5%;
     max-width: 100%;
@@ -34,6 +35,7 @@ img{
 }
 
 /* Div classes*/
+
 .content-wrap{
     max-width: 90%;
     /*margin-bottom: 10px;*/
@@ -42,8 +44,8 @@ img{
     /*padding: 10px;*/
     margin: auto;
     overflow: auto;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: .3%;
+    padding-right: .3%;
 }
 
 .content-wrap-closer{
@@ -53,17 +55,17 @@ img{
     margin-right: 50px;
     /*padding: 10px;*/
     overflow: auto;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: .3%;
+    padding-right: 3%;
 }
 
-
 /*Container for iframe videos*/
+
 .flex-container-video{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    padding: 3em;
+    padding: 3%;
     /*width: 90%;*/
     /*max-width: 90%;*/
     margin-bottom: 10px;
@@ -74,35 +76,18 @@ img{
 }
 
 /*CSS class for iframe videos*/
+
 .iframe-video{
     display: flex;
     border:0;
     aspect-ratio: 16/9;
     /*width: 75%;*/
-    margin-bottom:25px;
+    margin-bottom:2.5%;
     overflow: hidden;
 }
 
 
 /*Fonts imported from google*/
-
-
-/*.oswald-h1{*/
-/*    font-family: "Oswald", serif;*/
-/*    font-optical-sizing: auto;*/
-/*    font-weight: 700;*/
-/*    font-style: normal;*/
-/*    font-size: 3.2em;*/
-/*}*/
-
-/*.oswald-h2{*/
-/*    font-family: "Oswald", serif;*/
-/*    font-optical-sizing: auto;*/
-/*    font-weight: 600;*/
-/*    font-style: normal;*/
-/*    font-size: 2.8em;*/
-/*}*/
-
 
 .noto-sans-p{
     font-family: "Noto Sans", serif;
@@ -110,7 +95,7 @@ img{
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"wdth" 100;
-    font-size: 1.35em;
+    font-size: 1.35%;
 }
 
 .center {
@@ -138,6 +123,7 @@ h1{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    padding-bottom: .7%;
     /*font-size: 3.2em;*/
 }
 
@@ -166,6 +152,25 @@ p{
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    padding:.2%;
+}
+
+footer{
+    background: #1d2a59;
+    text-align: center;
+    display: block;
+    bottom: 0;
+    position: sticky;
+}
+.footer-text{
+    color: White;
+    margin: auto 0;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 1.5rem;
 }
 
 /*Link styling*/
