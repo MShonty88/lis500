@@ -29,7 +29,7 @@ main{
 /*Allows images to resize*/
 
 img{
-    padding-top: .5%;
+    padding-top: 2%;
     max-width: 100%;
     height: auto;
 }
@@ -113,18 +113,27 @@ img{
     height: auto;
 }
 
+.landing-image {
+    clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 100%);
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+.profile-image{
+    clip-path: circle(40%);
+    shape-outside: circle(45%);
+}
+
 /*Text styling*/
 h1{
     color: #523261;
-    font-size: 3.2em;
+    font-size: 4em;
     /*margin-top: .5em;*/
     margin: auto 0;
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    padding-bottom: .7%;
-    /*font-size: 3.2em;*/
+    padding-bottom: 2%;
 }
 
 h2{
@@ -136,6 +145,7 @@ h2{
     font-weight: 600;
     font-style: normal;
     font-size: 2.8em;
+    padding-top: 1%;
 }
 
 h3{
