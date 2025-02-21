@@ -4,9 +4,11 @@ html{
 }
 
 .content-wrap{
-    max-width: 100%;
-    margin: 5px;
-    padding: 40px;
+    max-width: 90%;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
     overflow: auto;
 }
 
@@ -20,26 +22,35 @@ html{
 }
 
 
-.flex-container{
+.flex-container-video{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     padding: 50px;
 }
 
+.images{
+    max-width: 90%;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    overflow: auto;
+}
+
+/*uncomment code to get a body that takes up 95% of the screen and puts a solid black line around it*/
 body{
     font-family: 'Verdana', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    /*width: 95%;*/
     background-color: #F9F8FF;
+    /*border: black solid;*/
+    /*border-top: none;*/
 }
 
 a{
     padding: 8px;
     color: #1B5299;
-}
-
-a:hover{
-    text-decoration: none;
 }
 
 h1{
@@ -52,8 +63,7 @@ h2{
     color: #205571;
     font-size: 30px;
     margin-top: 25px;
-    text-decoration-line: underline;
-    text-decoration-color: #205571;
+    text-decoration: underline #205571;
 }
 
 h3{
@@ -64,44 +74,64 @@ h3{
 
 p{
     color: #32021F;
+    width: 95%;
+
 }
 
 /*Start navbar styling*/
-nav{
+#main-nav{
     background-color: #1d2a59;
+    position: sticky;
+    top: 0;
     text-align: center;
-    margin: auto;
 }
 
-#nav-contents{
+#main-nav-contents{
     display: inline-block;
 }
 
-#nav-contents ul{
+#main-nav-contents ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow:hidden;
+    padding:0;
 }
 
-#nav-contents li{
+#main-nav-contents li{
     float: left;
-    border-right:1px solid #bbb;
-    border-left:1px solid #bbb;
+    border-left:thin solid #bbbbbb;
+    margin:0;
 }
 
-#nav-contents li a{
-    display: block;
+#main-nav-contents li:last-child{
+    border-right:1px solid #bbbbbb;
+}
+
+#main-nav-contents li a{
+    display: flex;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1.5em;
     text-decoration: none;
+    margin: 0;
+
 }
 
-#nav-contents li a:hover:not(.active){
-    background-color: #111;
+#main-nav-contents li a:hover:not(.active){
+    background-color: #111111;
+    outline: solid white thin;
+    outline-offset: -2px;
+    text-decoration: white solid underline;
+
 }
 
-#nav-contents .active{
+/*Provides more visible focus highlight for user*/
+#main-nav-contents li a:focus {
+    outline: solid white thin;
+    outline-offset: -1px;
+    text-decoration: white solid underline;
+
+}
+
+#main-nav-contents .active{
     background-color: #32021F;
 }
