@@ -118,10 +118,10 @@ img{
     padding-top: 2%;
     padding-bottom: 1%;
 }
-.profile-image{
-    clip-path: circle(40%);
-    shape-outside: circle(45%);
-}
+/*.profile-image{*/
+/*    clip-path: circle(40%);*/
+/*    shape-outside: circle(45%);*/
+/*}*/
 
 /*Text styling*/
 h1{
