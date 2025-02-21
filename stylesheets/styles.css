@@ -1,46 +1,13 @@
 /*General styling*/
 html{
     box-sizing: border-box;
+    /*fallback font*/
+    font-family: 'Verdana', sans-serif;
 }
 
-.content-wrap{
-    max-width: 90%;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px;
-    overflow: auto;
-}
-
-.iframe-video{
-    display: flex;
-    border:0;
-    aspect-ratio: 16/9;
-    width: 75%;
-    margin-bottom:25px;
-    overflow: hidden;
-}
-
-
-.flex-container-video{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    padding: 50px;
-}
-
-.images{
-    max-width: 90%;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px;
-    overflow: auto;
-}
 
 /*uncomment code to get a body that takes up 95% of the screen and puts a solid black line around it*/
 body{
-    font-family: 'Verdana', sans-serif;
     margin: 0 auto;
     /*width: 95%;*/
     background-color: #F9F8FF;
@@ -48,15 +15,85 @@ body{
     /*border-top: none;*/
 }
 
-a{
-    padding: 8px;
-    color: #1B5299;
+/*Uncomment to see the boxes around divs*/
+/*div{*/
+/*    border: black solid;*/
+/*}*/
+
+main{
+    margin-left: 10%;
 }
 
-h1{
+/*Allows images to resize*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Div classes*/
+.content-wrap{
+    max-width: 90%;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*padding: 10px;*/
+    overflow: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+
+/*Container for iframe videos*/
+.flex-container-video{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 3em;
+    /*width: 90%;*/
+    /*max-width: 90%;*/
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*padding: 10px;*/
+    overflow: hidden;
+}
+
+/*CSS class for iframe videos*/
+.iframe-video{
+    display: flex;
+    border:0;
+    aspect-ratio: 16/9;
+    /*width: 75%;*/
+    margin-bottom:25px;
+    overflow: hidden;
+}
+
+
+/*Fonts imported from google*/
+
+
+.oswald-h1{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.noto-sans-p{
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+
+/*Text styling*/
+h1.oswald-h1{
     color: #523261;
-    font-size: 45px;
-    margin-top: 0;
+    font-size: 100%;
+    margin-top: .3em;
 }
 
 h2{
@@ -72,20 +109,28 @@ h3{
     margin-top: 50px;
 }
 
-p{
+p.noto-sans-p{
     color: #32021F;
-    width: 95%;
+    width: 100%;
 
 }
 
-/*Start navbar styling*/
-#main-nav{
+/*Link styling*/
+a{
+    padding: 8px;
+    color: #1B5299;
+}
+
+/*Ids*/
+/*Main navbar container*/
+#main-nav-container{
     background-color: #1d2a59;
     position: sticky;
     top: 0;
     text-align: center;
 }
 
+/*Navbar content and styling*/
 #main-nav-contents{
     display: inline-block;
 }
