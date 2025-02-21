@@ -21,11 +21,14 @@ body{
 /*}*/
 
 main{
-    margin-left: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top:2%;
 }
 
 /*Allows images to resize*/
 img{
+    padding-top: .5%;
     max-width: 100%;
     height: auto;
 }
@@ -33,7 +36,19 @@ img{
 /* Div classes*/
 .content-wrap{
     max-width: 90%;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    /*margin-left: 50px;*/
+    /*margin-right: 50px;*/
+    /*padding: 10px;*/
+    margin: auto;
+    overflow: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.content-wrap-closer{
+    max-width: 90%;
+    /*margin-bottom: 10px;*/
     margin-left: 50px;
     margin-right: 50px;
     /*padding: 10px;*/
@@ -72,12 +87,21 @@ img{
 /*Fonts imported from google*/
 
 
-.oswald-h1{
-    font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
+/*.oswald-h1{*/
+/*    font-family: "Oswald", serif;*/
+/*    font-optical-sizing: auto;*/
+/*    font-weight: 700;*/
+/*    font-style: normal;*/
+/*    font-size: 3.2em;*/
+/*}*/
+
+/*.oswald-h2{*/
+/*    font-family: "Oswald", serif;*/
+/*    font-optical-sizing: auto;*/
+/*    font-weight: 600;*/
+/*    font-style: normal;*/
+/*    font-size: 2.8em;*/
+/*}*/
 
 
 .noto-sans-p{
@@ -86,39 +110,74 @@ img{
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    font-size: 1.35em;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center-image {
+    display: block;
+    margin-left: 25%;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
 
 /*Text styling*/
-h1.oswald-h1{
+h1{
     color: #523261;
-    font-size: 100%;
-    margin-top: .3em;
+    font-size: 3.2em;
+    /*margin-top: .5em;*/
+    margin: auto 0;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    /*font-size: 3.2em;*/
 }
 
 h2{
     color: #205571;
-    font-size: 30px;
-    margin-top: 25px;
+    margin: auto 0;
     text-decoration: underline #205571;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.8em;
 }
 
 h3{
     color: #C7C0C7;
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 2.5em;
 }
 
-p.noto-sans-p{
+p{
     color: #32021F;
-    width: 100%;
-
+    font-size: 1.35em;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
 }
 
 /*Link styling*/
 a{
     padding: 8px;
     color: #1B5299;
+    font-size: 1.3em;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
 }
 
 /*Ids*/
