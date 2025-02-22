@@ -57,6 +57,10 @@ div.spacer{
     margin-bottom:5em;
 }
 
+div.small-spacer{
+    margin-bottom: 1em;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -137,6 +141,13 @@ p {
 
 }
 
+.content-wrap {
+    max-width: 90%;
+    margin: auto;
+    overflow: auto;
+    padding-left: .3%;
+    padding-right: .3%;
+}
 
 /* --- Link States --- */
 a {
