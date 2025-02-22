@@ -24,7 +24,7 @@
 
 <main>
   <!--Class allows content in container to take up 100% of available space while still wrapping but should switch to flexbox-->
-  <div class="content-wrap">
+  <div>
     <h1>Implicit Bias</h1>
   </div>
   <button class="accordion-h3">The Basics</button>
@@ -79,13 +79,13 @@
 
 </main>
 <script>
-  var acc = document.getElementsByClassName("accordion-h3");
-  var i;
+  let acc = document.getElementsByClassName("accordion-h3");
+  let i;
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
       this.classList.toggle("h3active");
-      var panel = this.nextElementSibling;
+      let panel = this.nextElementSibling;
       if (panel.style.display === "block") {
         panel.style.display = "none";
       } else {
