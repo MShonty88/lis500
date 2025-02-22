@@ -175,10 +175,6 @@ a:hover {
     text-decoration: none;
 }
 
-article:last-child {
-    border-bottom: none;
-}
-
 /* Classes used to ensure dynamic YouTube video scaling */
 .flex-container-video{
     display: flex;
@@ -247,7 +243,7 @@ article:last-child {
     float: left;
     border-left:thin solid #bbbbbb;
     margin:0;
-    font-size: 1.05em;
+    font-size: 1.15em;
 }
 
 #main-nav-contents li:last-child{
@@ -284,6 +280,57 @@ article:last-child {
     background-color: #32021F;
 }
 
+/*Accordion Experiment*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+
+}
+.accordion-h3{
+    background-color: #205571;
+    cursor: pointer;
+    padding:.5em;
+    width: 100%;
+    border: double #C7C0C7;
+    text-align: left;
+    /*outline: double #C7C0C7;*/
+    transition: .5s;
+    color: #C7C0C7;
+    font-size: 1.8em;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.active{
+    background-color: #ccc;
+}
+.accordion-h3:hover{
+    background-color: #32021F;
+}
+.h3active{
+    background-color: #32021F;
+}
+/*Change max width for different look*/
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    max-width: 60rem;
+    margin: 0 auto;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
 
 /*Start aside code*/
 /* --- Sidebar (for Tech Hero Pages) --- */
