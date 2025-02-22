@@ -283,6 +283,9 @@ a:hover {
 .accordion-h3:hover{
     background-color: #32021F;
 }
+.accordion-h3:focus{
+    text-decoration: white double underline ;
+}
 .h3active{
     background-color: #32021F;
 }
