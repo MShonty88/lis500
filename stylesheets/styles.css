@@ -350,13 +350,8 @@ h2:target{
     background: #1c87c9;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
 /*This code will control the display of the interactive example in for the model*/
-canvas {
+canvas{
     display: block;
     background: #F9F8FF;
     max-width: 60rem;
@@ -365,4 +360,10 @@ canvas {
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     overflow: hidden;
+}
+
+/*Media queries to make the side nav change based on viewport size NEEDS ADJUSTMENT*/
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
