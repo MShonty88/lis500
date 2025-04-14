@@ -307,7 +307,7 @@ a:hover{
 
 /*Navigation for machine learning page anchors*/
 .sidenav{
-    width: 12%;
+    width: 15%;
     position: fixed;
     z-index: 1;
     top: 30px;
@@ -327,7 +327,8 @@ a:hover{
 
 .sidenav a{
     padding: 6px 8px 6px 16px;
-    text-decoration: none;
+    text-decoration: underline;
+    text-align: center;
     font-size: 25px;
     /*color: #2196F3;*/
     display: block;
@@ -341,7 +342,9 @@ a:hover{
 }
 
 .sidenav a:hover{
-    color: #064579;
+    color: #1B5299;
+    text-decoration: none;
+    transition:1.5s;
 }
 
 /*Used for highlighting the header of the in-page target that's been selected from the side nav*/
@@ -362,8 +365,27 @@ canvas{
     overflow: hidden;
 }
 
-/*Media queries to make the side nav change based on viewport size NEEDS ADJUSTMENT*/
-@media screen and (max-height: 450px){
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+/*Code no longer used*/
+/*!*Media queries to make the side nav change based on viewport size NEEDS ADJUSTMENT*!*/
+/*@media screen and (max-width: 900px){*/
+/*    .sidenav {padding-top: 15px;}*/
+/*    .sidenav a {font-size: 18px;}*/
+/*}*/
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1280px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    .sidenav a {float: left;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidenav a {
+        text-align: center;
+        float: none;
+    }
 }
