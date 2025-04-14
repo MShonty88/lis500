@@ -26,10 +26,10 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(320, 260);
+    createCanvas(640, 520);
     // Create the video
     video = createCapture(VIDEO);
-    video.size(320, 240);
+    video.size(640, 520);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
@@ -43,10 +43,10 @@ function draw() {
     image(flippedVideo, 0, 0);
 
     // Draw the label
-    fill(255);
-    textSize(16);
-    textAlign(CENTER);
-    text(label, width / 2, height - 4);
+    fill(0,255,0,);
+    textSize(52);
+    textAlign(CENTER, CENTER);
+    text(label, width / 2, height - 32);
 }
 
 // Get a prediction for the current video frame
