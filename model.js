@@ -1,73 +1,70 @@
-//NOTE THIS IS THE EXAMPLE CODE TO SEE HOW WE COULD INSERT THE FINISHED PRODUCT ON THE PAGE
+// Copyright (c) 2019 ml5
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
 
-// Teachable Machine
-// The Coding Train / Daniel Shiffman
-// https://thecodingtrain.com/TeachableMachine/1-teachable-machine.html
-// https://editor.p5js.org/codingtrain/sketches/PoZXqbu4v
+/* ===
+ml5 Example
+Webcam Image Classification using a pre-trained customized model and p5.js
+This example uses p5 preload function to create the classifier
+=== */
 
-// The video
-let video;
-// For displaying the label
-let label = "waiting...";
-// The classifier
+// Classifier Variable
 let classifier;
-let modelURL = 'https://teachablemachine.withgoogle.com/models/bXy2kDNi/';
+// Model URL
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/2Mge6qydH/';
 
-// STEP 1: Load the model!
+// Video
+let video;
+let flippedVideo;
+// To store the classification
+let label = "";
+
+// Load the model first
 function preload() {
-    classifier = ml5.imageClassifier(modelURL + 'model.json');
+    classifier = ml5.imageClassifier(imageModelURL + 'model.json');
 }
-
 
 function setup() {
-    createCanvas(640, 520);
+    createCanvas(320, 260);
     // Create the video
     video = createCapture(VIDEO);
+    video.size(320, 240);
     video.hide();
-    // STEP 2: Start classifying
-    classifyVideo();
-}
 
-// STEP 2 classify the videeo!
-function classifyVideo() {
-    classifier.classify(video, gotResults);
+    flippedVideo = ml5.flipImage(video)
+    // Start classifying
+    classifyVideo();
 }
 
 function draw() {
     background(0);
-
     // Draw the video
-    image(video, 0, 0);
+    image(flippedVideo, 0, 0);
 
-    // STEP 4: Draw the label
-    textSize(32);
-    textAlign(CENTER, CENTER);
+    // Draw the label
     fill(255);
-    text(label, width / 2, height - 16);
-
-    // Pick an emoji, the "default" is train
-    let emoji = "🚂";
-    if (label == "Rainbow") {
-        emoji = "🌈";
-    } else if (label == "Unicorn") {
-        emoji = "🦄";
-    } else if (label == "Ukulele") {
-        emoji = "🎸";
-    }
-
-    // Draw the emoji
-    textSize(256);
-    text(emoji, width / 2, height / 2);
+    textSize(16);
+    textAlign(CENTER);
+    text(label, width / 2, height - 4);
 }
 
-// STEP 3: Get the classification!
-function gotResults(error, results) {
-    // Something went wrong!
+// Get a prediction for the current video frame
+function classifyVideo() {
+    flippedVideo = ml5.flipImage(video)
+    classifier.classify(flippedVideo, gotResult);
+}
+
+// When we get a result
+function gotResult(error, results) {
+    // If there is an error
     if (error) {
         console.error(error);
         return;
     }
-    // Store the label and classify again!
+    // The results are in an array ordered by confidence.
+    // console.log(results[0]);
     label = results[0].label;
+    // Classifiy again!
     classifyVideo();
 }
