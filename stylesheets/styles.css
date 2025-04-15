@@ -181,6 +181,16 @@ a:hover{
     text-decoration: none;
 }
 
+.stand-alone{
+    text-decoration: underline;
+    font-size: 25px;
+    display: block;
+    color: #1B5299;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;}
+
 /* Classes used to ensure dynamic YouTube video scaling */
 .flex-container-video{
     display: flex;
@@ -353,7 +363,7 @@ h2:target{
     background: #1c87c9;
 }
 
-/*This code will control the display of the interactive example in for the model*/
+/*This code will control the display styling of the interactive example in for the model*/
 canvas{
     display: block;
     background: #F9F8FF;
@@ -365,14 +375,7 @@ canvas{
     overflow: hidden;
 }
 
-/*Code no longer used*/
-/*!*Media queries to make the side nav change based on viewport size NEEDS ADJUSTMENT*!*/
-/*@media screen and (max-width: 900px){*/
-/*    .sidenav {padding-top: 15px;}*/
-/*    .sidenav a {font-size: 18px;}*/
-/*}*/
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* On screens that are less than 1280px wide, make the sidebar into a topbar */
 @media screen and (max-width: 1280px) {
     .sidenav {
         width: 100%;
