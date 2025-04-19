@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+/*scroll-behavior keeps the screen from jumping too quickly when clicking a link that leads to a same page target*/
+    scroll-behavior: smooth;
 }
 
 /*Fonts from Google*/
@@ -15,6 +17,7 @@
 .noto-sans-a{
 
 }
+
 .noto-sans-p{
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
@@ -22,13 +25,12 @@
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
+
 /* --- Base Styles --- */
 body{
     margin: 0 auto;
     font-family: 'Verdana', sans-serif;
-    /*line-height: 1.6;*/
     background-color: #205571;
-    /*padding: 1.2rem;*/
 }
 
 
@@ -98,8 +100,8 @@ h2, h3, h4{
     padding-bottom: 1rem;
     color: #222;
 }
-/*Styling for headers and paragraphs*/
 
+/*Styling for headers and paragraphs*/
 h1{
     color: #523261;
     font-size: 4em;
@@ -152,13 +154,11 @@ p{
     padding-right: .3%;
 }
 
-/* --- Link States --- */
+/* --- General Link States --- */
 a{
-    /*padding: 8px;*/
     color: #1B5299;
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
-    /*font-weight: 500;*/
     font-style: normal;
     font-variation-settings:"wdth" 100;
 
@@ -229,7 +229,6 @@ a:hover{
 }
 
 #main-nav-contents ul{
-    /*list-style: none;*/
     margin: 0;
     padding:0;
 }
@@ -276,6 +275,7 @@ a:hover{
     background-color: #32021F;
 }
 
+/*The below styles how the accordions on the resources.html page works*/
 .accordion-h3{
     background-color: #205571;
     cursor: pointer;
@@ -283,7 +283,6 @@ a:hover{
     width: 100%;
     border: double #C7C0C7;
     text-align: left;
-    /*outline: double #C7C0C7;*/
     transition: .5s;
     color: #C7C0C7;
     font-size: 1.8em;
@@ -297,9 +296,11 @@ a:hover{
 .accordion-h3:hover{
     background-color: #32021F;
 }
+
 .accordion-h3:focus{
     text-decoration: white double underline ;
 }
+
 .h3active{
     background-color: #32021F;
 }
@@ -323,34 +324,29 @@ a:hover{
     top: 30px;
     left: 20px;
     background: #eee;
-    /*overflow-x: hidden;*/
     margin:45px auto;
     padding: 8px 0;
-    /*background: #F9F8FF;*/
     max-width: 60rem;
-    /*margin: 0 auto;*/
-    /*padding: 1.2rem;*/
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     overflow: hidden;
 }
 
+/*Styling for the links in the side nav for the AI model page*/
 .sidenav a{
     padding: 6px 8px 6px 16px;
     text-decoration: underline;
     text-align: center;
     font-size: 25px;
-    /*color: #2196F3;*/
     display: block;
-    /*padding: 8px;*/
     color: #1B5299;
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
-    /*font-weight: 500;*/
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
 
+/*Sets hover styling for sidenav links*/
 .sidenav a:hover{
     color: #1B5299;
     text-decoration: none;
@@ -358,9 +354,16 @@ a:hover{
 }
 
 /*Used for highlighting the header of the in-page target that's been selected from the side nav*/
-h2:target{
-    color: white;
-    background: #1c87c9;
+h2:target {
+    animation:fade 3.5s;
+}
+
+/*This creates an effect where the targeted header changes the background color and text color and then fades back to the original colors*/
+@keyframes fade {
+    0% {
+        background:#1c87c9;
+        color:#F9F8FF;
+    }
 }
 
 /*This code will control the display styling of the interactive example in for the model*/
